@@ -1,7 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <title>Deno Sites</title>
-  <!-- Icon -->
+
+  <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="Deno.png">
   <link rel="icon" type="image/png" href="Deno.png">
 
@@ -16,15 +19,10 @@
       overscroll-behavior: none;
     }
 
-    table {
+    main {
       width: 100%;
       max-width: 1450px;
-      margin: auto;
-      border-collapse: collapse;
-    }
-
-    td {
-      padding: 0;
+      margin: 0 auto;
     }
 
     iframe {
@@ -33,54 +31,25 @@
       border: none;
       display: block;
     }
-
-    /* Splash screen */
-    #splash {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #121212;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 9999;
-      transition: opacity 0.4s ease;
-    }
-
-    #splash img {
-      width: 90px;
-      height: 90px;
-      opacity: 0.9;
-    }
   </style>
 </head>
 
 <body>
-
-<!-- Splash Screen -->
-<div id="splash">
-  <img src="ns-icon.png" alt="NS">
-</div>
-
-<table>
-  <tr><td><iframe src="https://mstry9.nsromania.info/?token=read1-7bcf2859f8c8f39a" loading="lazy" referrerpolicy="no-referrer"></iframe></td></tr>
-  <tr><td><iframe src="https://mstry9azure.azurewebsites.net/?token=read1-75f11cf6fb86a6ee" loading="lazy" referrerpolicy="no-referrer"></iframe></td></tr>
-  <tr><td><iframe src="https://mstry9online.nsromania.info/?token=read1-cee46c0510d61c50" loading="lazy" referrerpolicy="no-referrer"></iframe></td></tr>
-  <tr><td><iframe src="https://mstry9google.nightscoutfree.com/?token=read1-85949d1e3fd02e59" loading="lazy" referrerpolicy="no-referrer"></iframe></td></tr>
-  <tr><td><iframe src="https://mstry9google2.mooo.com/?token=alexa-3cdbb9b47a4f8afc" loading="lazy" referrerpolicy="no-referrer"></iframe></td></tr>
-  <tr><td><iframe src="https://mstry9home.duckdns.org:1338/?token=read1-5e12381731c72406" loading="lazy" referrerpolicy="no-referrer"></iframe></td></tr>
-  <tr><td><iframe src="https://mstry9--nightscout--cmnxw946qpz2.code.run/?token=read1-97a5f0f91c9e024c" loading="lazy" referrerpolicy="no-referrer"></iframe></td></tr>
-</table>
-
-<script>
-  window.addEventListener("DOMContentLoaded", function () {
-    const splash = document.getElementById("splash");
-    splash.style.opacity = "0";
-    setTimeout(() => splash.style.display = "none", 400);
-  });
-</script>
-
+  <main>
+    <iframe src="https://mstry9.nsromania.info/?token=read1-7bcf2859f8c8f39a"
+            loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <iframe src="https://mstry9azure.azurewebsites.net/?token=read1-75f11cf6fb86a6ee"
+            loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <iframe src="https://mstry9online.nsromania.info/?token=read1-cee46c0510d61c50"
+            loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <iframe src="https://mstry9google.nightscoutfree.com/?token=read1-85949d1e3fd02e59"
+            loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <iframe src="https://mstry9google2.mooo.com/?token=alexa-3cdbb9b47a4f8afc"
+            loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <iframe src="https://mstry9home.duckdns.org:1338/?token=read1-5e12381731c72406"
+            loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <iframe src="https://mstry9--nightscout--cmnxw946qpz2.code.run/?token=read1-97a5f0f91c9e024c"
+            loading="lazy" referrerpolicy="no-referrer"></iframe>
+  </main>
 </body>
 </html>
